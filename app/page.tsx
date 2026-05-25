@@ -1,4 +1,6 @@
+import Contact from "./components/Contact";
 import ProjectCard from "./components/ProjectCard";
+import SkillBadge from "./components/SkillBadge";
 
 export default function Home() {
   return (
@@ -31,6 +33,8 @@ export default function Home() {
         </div>
       </section>
 
+      <hr className="max-w-4xl m-auto border-gray-100" />
+
       <section className="max-w-4xl mx-auto px-6 py-16  ">
         <h2 className="text-2xl font-bold text-gray-900 mb-8">Projekty</h2>
 
@@ -58,6 +62,27 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <hr className="max-w-4xl m-auto border-gray-100" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8">Skills</h2>
+
+        <div className="flex flex-wrap gap-3">
+          <SkillBadge skill="React" />
+          <SkillBadge skill="TypeScript" />
+          <SkillBadge skill="JavaScript" />
+          <SkillBadge skill="HTML" />
+          <SkillBadge skill="CSS" />
+          <SkillBadge skill="Git" />
+          <SkillBadge skill="GitHub Actions" />
+          <SkillBadge skill="REST API" />
+          <SkillBadge skill="Next.js" />
+          <SkillBadge skill="Tailwind" />
+        </div>
+      </section>
+
+      <Contact />
     </main>
   );
 }
