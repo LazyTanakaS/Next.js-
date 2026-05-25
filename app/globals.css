@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @variant dark (&:where(.dark, .dark *));
 
+* {
+  transition:
+    background-color 1s ease,
+    color 1s ease,
+    border-color 1s ease;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #111111;
