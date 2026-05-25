@@ -14,15 +14,17 @@ export default function ProjectCard({
   githubUrl,
 }: ProjectCardProps) {
   return (
-    <div className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
-      <h3 className="text-3xl font-bold text-gray-900 mb-3">{title}</h3>
-      <p className="text-xl text-gray-500 mb-2">{description}</p>
+    <div className="rounded-xl border border-[var(--border)] bg-[var(--surface-elevated)] p-6 transition-[box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.45)]">
+      <h3 className="mb-3 text-3xl font-bold text-[var(--text-strong)]">
+        {title}
+      </h3>
+      <p className="mb-2 text-xl text-[var(--text-muted)]">{description}</p>
 
       <div className="flex flex-wrap gap-2 mb-4">
         {tags.map((tag) => (
           <span
             key={tag}
-            className="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full"
+            className="rounded-full bg-[var(--surface)] px-3 py-1 text-sm text-[var(--text-muted)]"
           >
             {tag}
           </span>
@@ -33,14 +35,14 @@ export default function ProjectCard({
         <a
           href={githubUrl}
           target="_blank"
-          className="text-sm text-gray-600 hover:text-gray-900 underline"
+          className="text-sm text-[var(--link)] underline transition-colors hover:text-[var(--link-hover)]"
         >
           GitHub
         </a>
         <a
           href={demoUrl}
           target="_blank"
-          className="text-sm text-gray-600 hover:text-gray-900 underline"
+          className="text-sm text-[var(--link)] underline transition-colors hover:text-[var(--link-hover)]"
         >
           Demo
         </a>
