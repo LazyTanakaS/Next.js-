@@ -1,11 +1,11 @@
 "use client";
 
 import { useLang } from "../context/LanguageContext";
-import { transitions } from "../i18n/translations";
+import { translations } from "../i18n/translations";
 
 export default function Hero() {
   const { lang } = useLang();
-  const t = transitions[lang];
+  const t = translations[lang];
 
   return (
     <section className="max-w-4xl mx-auto px-6 pt-32 pb-24">
