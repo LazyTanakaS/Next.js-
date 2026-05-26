@@ -12,37 +12,35 @@ export default function Navbar() {
   const isDark = theme === "dark";
 
   return (
-    <nav className="fixed top-0 z-10 w-full border-b border-[--border] bg-[color-mix(in_srgb,var(--background)_86%,transparent)] backdrop-blur-md">
+    <nav className="fixed top-0 z-10 w-full border-b border-border bg-background/85 backdrop-blur-md">
       <div className="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex gap-6">
-          <h3 className="text-2xl font-bold text-[--text-strong]">
-            Petr Komar
-          </h3>
+          <h3 className="text-2xl font-bold text-text-strong">Petr Komar</h3>
         </div>
 
         <div className="flex gap-6">
           <a
             href="#projekty"
-            className="text-[--text-muted] hover:text-[--text-strong] transition-colors"
+            className="text-text-muted transition-colors hover:text-text-strong"
           >
             {t.nav.projects}
           </a>
           <a
             href="#skills"
-            className="text-[--text-muted] hover:text-[--text-strong] transition-colors"
+            className="text-text-muted transition-colors hover:text-text-strong"
           >
             {t.nav.skills}
           </a>
           <a
             href="#kontakt"
-            className="text-[--text-muted] hover:text-[--text-strong] transition-colors"
+            className="text-text-muted transition-colors hover:text-text-strong"
           >
             {t.nav.contact}
           </a>
 
           <button
             onClick={() => setTheme(isDark ? "light" : "dark")}
-            className="px-3 py-1 rounded-lg border border-[--border] bg-[--surface] text-[--text-strong] hover:bg-[--surface-elevated] transition-colors"
+            className="rounded-lg border border-border bg-surface px-3 py-1 text-text-strong transition-colors hover:bg-surface-elevated"
             aria-label="Toggle color theme"
           >
             {isDark ? "☀" : "☾"}
@@ -50,7 +48,7 @@ export default function Navbar() {
 
           <button
             onClick={() => changeLang(lang === "cs" ? "en" : "cs")}
-            className="px-3 py-1 rounded-lg border border-[--border] text-[--text-muted]"
+            className="rounded-lg border border-border px-3 py-1 text-text-muted"
           >
             {lang === "cs" ? "EN" : "CS"}
           </button>

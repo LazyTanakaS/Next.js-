@@ -7,20 +7,20 @@ import SkillSection from "./components/SkillSections";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[--background]">
+    <main className="min-h-screen bg-background">
       <Navbar />
 
       <AnimatedSection>
         <Hero />
       </AnimatedSection>
 
-      <hr className="m-auto max-w-4xl border-[--border]" />
+      <hr className="m-auto max-w-4xl border-border" />
 
       <AnimatedSection>
         <ProjectSection />
       </AnimatedSection>
 
-      <hr className="m-auto max-w-4xl border-[--border]" />
+      <hr className="m-auto max-w-4xl border-border" />
 
       <AnimatedSection>
         <SkillSection />

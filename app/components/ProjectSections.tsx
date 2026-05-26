@@ -10,7 +10,7 @@ export default function ProjectSection() {
 
   return (
     <section id="#projekty" className="max-w-4xl mx-auto px-6 py-16">
-      <h2 className="mb-8 text-2xl font-bold text-[--text-strong]">
+      <h2 className="mb-8 text-2xl font-bold text-text-strong">
         {t.sections.projects}
       </h2>
 
