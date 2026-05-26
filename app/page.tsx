@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import ProjectCard from "./components/ProjectCard";
 import SkillBadge from "./components/SkillBadge";
 import AnimatedSection from "./components/AnimatedSection";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
@@ -10,37 +11,7 @@ export default function Home() {
       <Navbar />
 
       <AnimatedSection>
-        <section className="max-w-4xl mx-auto px-6 pt-32 pb-24">
-          <h1 className="mb-4 text-4xl font-bold text-[var(--text-strong)]">
-            Petr Komar
-          </h1>
-          <p className="mb-2 text-xl text-[var(--text-muted)]">
-            Junior Frontend Developer
-          </p>
-          <p className="max-w-lg text-[var(--text-muted)]">
-            Junior frontend developer zaměřený na React a TypeScript. Postavil
-            16+ projektů s REST API, localStorage a CI/CD přes GitHub Actions.
-            Přecházím z operations managementu — hledám junior roli kde mohu
-            růst v týmu.{" "}
-          </p>
-
-          <div className="flex gap-4 mt-8">
-            <a
-              href="https://github.com/LazyTanakaS"
-              target="_blank"
-              className="rounded-lg bg-[var(--text-strong)] px-6 py-2 text-[var(--background)] transition-colors hover:opacity-90"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://lazytanakas.github.io/portfolio/"
-              target="_blank"
-              className="rounded-lg border border-[var(--border)] px-6 py-2 text-[var(--text-strong)] transition-colors hover:bg-[var(--surface)]"
-            >
-              Portfolio
-            </a>
-          </div>
-        </section>
+        <Hero />
       </AnimatedSection>
 
       <hr className="m-auto max-w-4xl border-[var(--border)]" />

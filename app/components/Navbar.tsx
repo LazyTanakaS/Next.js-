@@ -1,9 +1,11 @@
 "use client";
 
 import { useTheme } from "./ThemeProvider";
+import { useLang } from "../context/LanguageContext";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
+  const { lang, setLang } = useLang();
 
   const isDark = theme === "dark";
 
@@ -42,6 +44,13 @@ export default function Navbar() {
             aria-label="Toggle color theme"
           >
             {isDark ? "☀" : "☾"}
+          </button>
+
+          <button
+            onClick={() => setLang(lang === "cs" ? "en" : "cs")}
+            className="px-3 py-1 rounded-lg border border-[var(--border)] text-[var(--text-muted)]"
+          >
+            {lang === "cs" ? "EN" : "CS"}
           </button>
         </div>
       </div>
