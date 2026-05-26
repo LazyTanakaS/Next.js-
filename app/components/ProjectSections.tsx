@@ -1,7 +1,7 @@
 "use client";
 
 import { useLang } from "../context/LanguageContext";
-import { translations, Lang } from "../i18n/translations";
+import { translations } from "../i18n/translations";
 import ProjectCard from "./ProjectCard";
 
 export default function ProjectSection() {
