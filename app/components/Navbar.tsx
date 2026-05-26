@@ -6,7 +6,7 @@ import { translations } from "../i18n/translations";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
-  const { lang, setLang } = useLang();
+  const { lang, changeLang } = useLang();
   const t = translations[lang];
 
   const isDark = theme === "dark";
@@ -49,7 +49,7 @@ export default function Navbar() {
           </button>
 
           <button
-            onClick={() => setLang(lang === "cs" ? "en" : "cs")}
+            onClick={() => changeLang(lang === "cs" ? "en" : "cs")}
             className="px-3 py-1 rounded-lg border border-[--border] text-[--text-muted]"
           >
             {lang === "cs" ? "EN" : "CS"}
