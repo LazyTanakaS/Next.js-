@@ -41,6 +41,14 @@ export const translations = {
           "SPA kvíz s Open Trivia DB API, časovačem, kategoriemi a historií výsledků v localStorage.",
       },
     },
+    skills: {
+      categories: {
+        core: "Základní technologie",
+        styling: "Styling",
+        tools: "Nástroje",
+        integration: "Integrace",
+      },
+    },
     contact: {
       title: "Kontakt",
       location: "Praha, Česká republika",
@@ -84,6 +92,14 @@ export const translations = {
         title: "Quiz App",
         description:
           "SPA quiz app using Open Trivia DB API with timer, categories and localStorage score history.",
+      },
+    },
+    skills: {
+      categories: {
+        core: "Core Technologies",
+        styling: "Styling",
+        tools: "Tools",
+        integration: "Integration",
       },
     },
     contact: {
