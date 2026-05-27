@@ -38,6 +38,14 @@ export default function ProjectSection() {
           demoUrl="https://lazytanakas.github.io/React-TypeScript/weather-app/"
           githubUrl="https://github.com/LazyTanakaS/React-TypeScript/tree/main/weather-app"
         />
+
+        <ProjectCard
+          title={t.projects.quizApp.title}
+          description={t.projects.quizApp.description}
+          tags={["Vanilla JS", "Async API", "SPA", "LocalStorage"]}
+          demoUrl="https://lazytanakas.github.io/JS-Mini-Projects/quiz-app/"
+          githubUrl="https://github.com/LazyTanakaS/JS-Mini-Projects"
+        />
       </div>
     </section>
   );

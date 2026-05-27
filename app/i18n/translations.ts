@@ -35,6 +35,11 @@ export const translations = {
         description:
           "React + TypeScript aplikace s OpenWeatherMap API a automatickým CI/CD.",
       },
+      quizApp: {
+        title: "Quiz App",
+        description:
+          "SPA kvíz s Open Trivia DB API, časovačem, kategoriemi a historií výsledků v localStorage.",
+      },
     },
     contact: {
       title: "Kontakt",
@@ -74,6 +79,11 @@ export const translations = {
         title: "Weather App",
         description:
           "React + TypeScript app with OpenWeatherMap API and automated CI/CD.",
+      },
+      quizApp: {
+        title: "Quiz App",
+        description:
+          "SPA quiz app using Open Trivia DB API with timer, categories and localStorage score history.",
       },
     },
     contact: {
