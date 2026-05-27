@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Petr Komar — Junior Frontend Developer",
   description:
     "Portfolio of Petr Komar, a Junior Frontend Developer focused on React and TypeScript, featuring production-style projects, API integrations, and CI/CD workflows.",
-  metadataBase: new URL("https://lazytanakas.github.io/portfolio/"),
+  metadataBase: new URL("https://next-js-iota-roan.vercel.app"),
   openGraph: {
     title: "Petr Komar — Junior Frontend Developer",
     description:
