@@ -9,26 +9,50 @@ export default function Hero() {
 
   return (
     <section className="max-w-4xl mx-auto px-6 pt-32 pb-24">
-      <h1 className="mb-4 text-4xl font-bold text-text-strong">Petr Komar</h1>
-      <p className="mb-2 text-xl text-text-muted">{t.hero.role}</p>
-      <p className="max-w-lg text-text-muted">{t.hero.description}</p>
+      <p className="mb-3 text-sm font-semibold tracking-widest text-text-muted uppercase">
+        {t.hero.role}
+      </p>
+      <h1 className="mb-6 text-5xl font-bold">
+        <span className="text-text-strong">Petr </span>
+        <span className="text-text-muted">Komar</span>
+      </h1>
+      <p className="max-w-lg mb-8 text-text-muted">{t.hero.description}</p>
 
-      <div className="flex gap-5 mt-8">
+      <div className="flex gap-4 mb-8">
         <a
           href="https://github.com/LazyTanakaS"
           target="_blank"
-          className="rounded-lg bg-text-strong px-6 py-2 text-background transition-colors hover:opacity-90"
+          className="rounded-lg bg-text-strong px-6 py-2 text-background font-medium hover:opacity-90 transition-opacity"
+          rel="noopener noreferrer"
         >
           {t.hero.github}
         </a>
 
         <a
-          href="https://lazytanakas.github.io/portfolio/"
+          href="/cv.pdf"
           target="_blank"
-          className="rounded-lg border border-border px-6 py-2 text-text-strong transition-colors hover:bg-surface"
+          rel="noopener noreferrer"
+          className="rounded-lg border border-border px-6 py-2 text-text-strong hover:bg-surface transition-colors"
         >
-          {t.hero.portfolio}
+          {t.hero.downloadCv}
         </a>
+        <a
+          href="#kontakt"
+          className="rounded-lg border border-border px-6 py-2 text-text-strong hover:bg-surface transition-colors"
+        >
+          {t.hero.contact}
+        </a>
+      </div>
+
+      <div className="flex flex-wrap gap-2">
+        {["TypeScript", "React", "CSS3", "GitHub Actions"].map((tag) => (
+          <span
+            key={tag}
+            className="rounded-full border border-border px-3 py-1 text-sm text-text-muted"
+          >
+            {tag}
+          </span>
+        ))}
       </div>
     </section>
   );

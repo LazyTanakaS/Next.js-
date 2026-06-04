@@ -4,6 +4,8 @@ import AnimatedSection from "./components/AnimatedSection";
 import Hero from "./components/Hero";
 import ProjectSection from "./components/ProjectSections";
 import SkillSection from "./components/SkillSections";
+import About from "./components/About";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +14,12 @@ export default function Home() {
 
       <AnimatedSection>
         <Hero />
+      </AnimatedSection>
+
+      <hr className="m-auto max-w-4xl border-border" />
+
+      <AnimatedSection>
+        <About /> {/* ← сюда */}
       </AnimatedSection>
 
       <hr className="m-auto max-w-4xl border-border" />
@@ -31,6 +39,8 @@ export default function Home() {
           <Contact />
         </section>
       </AnimatedSection>
+
+      <Footer />
     </main>
   );
 }

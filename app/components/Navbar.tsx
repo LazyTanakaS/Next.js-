@@ -20,6 +20,12 @@ export default function Navbar() {
 
         <div className="flex gap-6">
           <a
+            href="#about"
+            className="text-text-muted transition-colors hover:text-text-strong"
+          >
+            {t.nav.about}
+          </a>
+          <a
             href="#projekty"
             className="text-text-muted transition-colors hover:text-text-strong"
           >

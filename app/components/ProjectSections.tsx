@@ -14,13 +14,14 @@ export default function ProjectSection() {
         {t.sections.projects}
       </h2>
 
-      <div className="grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <ProjectCard
           title={t.projects.expenseTracker.title}
           description={t.projects.expenseTracker.description}
           tags={["TypeScript", "React", "LocalStorage", "CRUD"]}
           demoUrl="https://lazytanakas.github.io/React-TypeScript/expenses-tracker/"
           githubUrl="https://github.com/LazyTanakaS/React-TypeScript/tree/main/expenses-tracker"
+          badge="Hlavní projekt"
         />
 
         <ProjectCard
@@ -29,6 +30,7 @@ export default function ProjectSection() {
           tags={["TMDb API", "React", "useCallback", "Components"]}
           demoUrl="https://lazytanakas.github.io/React-mini-projects/movie-search-app/"
           githubUrl="https://github.com/LazyTanakaS/React-mini-projects"
+          badge="Architektura"
         />
 
         <ProjectCard
@@ -37,6 +39,7 @@ export default function ProjectSection() {
           tags={["TypeScript", "React", "GitHub Actions", "CI/CD"]}
           demoUrl="https://lazytanakas.github.io/React-TypeScript/weather-app/"
           githubUrl="https://github.com/LazyTanakaS/React-TypeScript/tree/main/weather-app"
+          badge="CI/CD"
         />
 
         <ProjectCard
@@ -45,6 +48,7 @@ export default function ProjectSection() {
           tags={["Vanilla JS", "Async API", "SPA", "LocalStorage"]}
           demoUrl="https://lazytanakas.github.io/JS-Mini-Projects/quiz-app/"
           githubUrl="https://github.com/LazyTanakaS/JS-Mini-Projects"
+          badge="Základy"
         />
       </div>
     </section>
