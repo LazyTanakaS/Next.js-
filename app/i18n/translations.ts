@@ -34,6 +34,11 @@ export const translations = {
       contact: "Kontakt",
     },
     projects: {
+      bekasava: {
+        title: "Court Interpreter Website",
+        description:
+          "Reálný klientský projekt. Vícejazyčný web s i18n ve 4 jazycích, custom hooks a plnou přístupností.",
+      },
       expenseTracker: {
         title: "Expense Tracker",
         description:
@@ -104,10 +109,15 @@ export const translations = {
       contact: "Contact",
     },
     projects: {
+      bekasava: {
+        title: "Court Interpreter Website",
+        description:
+          "Reálný klientský projekt. Vícejazyčný web s i18n ve 4 jazycích, custom hooks a plnou přístupností.",
+      },
       expenseTracker: {
         title: "Expense Tracker",
         description:
-          "Expense manager with CRUD operations, sidebar navigation and localStorage persistence.",
+          "Real client project. Multilingual site with 4-language i18n, custom hooks and full accessibility.",
       },
       movieSearch: {
         title: "Movie Search App",

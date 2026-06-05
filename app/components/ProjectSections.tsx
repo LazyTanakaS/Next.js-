@@ -16,6 +16,15 @@ export default function ProjectSection() {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <ProjectCard
+          title={t.projects.bekasava.title}
+          description={t.projects.bekasava.description}
+          tags={["React", "TypeScript", "Vite", "i18n", "Accessibility"]}
+          demoUrl="https://bekasava.eu"
+          githubUrl="https://github.com/LazyTanakaS/bekasava-eu"
+          badge="Klient"
+        />
+
+        <ProjectCard
           title={t.projects.expenseTracker.title}
           description={t.projects.expenseTracker.description}
           tags={["TypeScript", "React", "LocalStorage", "CRUD"]}
