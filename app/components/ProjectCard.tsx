@@ -5,6 +5,7 @@ interface ProjectCardProps {
   demoUrl: string;
   githubUrl: string;
   badge?: string;
+  caseStudyUrl?: string;
 }
 
 export default function ProjectCard({
@@ -14,6 +15,7 @@ export default function ProjectCard({
   demoUrl,
   githubUrl,
   badge,
+  caseStudyUrl,
 }: ProjectCardProps) {
   return (
     <div className="rounded-xl border border-border bg-surface-elevated p-6 transition-[box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.45)]">
@@ -57,6 +59,15 @@ export default function ProjectCard({
         >
           GitHub
         </a>
+
+        {caseStudyUrl && (
+          <a
+            href={caseStudyUrl}
+            className="text-sm text-link underline transition-colors hover:text-link-hover"
+          >
+            Case study →
+          </a>
+        )}
       </div>
     </div>
   );
