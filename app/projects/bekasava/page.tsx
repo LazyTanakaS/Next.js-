@@ -3,7 +3,7 @@ import Navbar from "@/app/components/Navbar";
 
 export default function BekasavaCaseStudy() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background animate-fadeIn">
       <div className="max-w-3xl mx-auto px-6 py-24">
         <Link
           href={"/"}
