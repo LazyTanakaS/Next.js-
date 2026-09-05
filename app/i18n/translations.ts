@@ -42,12 +42,12 @@ export const translations = {
       expenseTracker: {
         title: "Expense Tracker",
         description:
-          "Správce výdajů s CRUD operacemi, navigací a localStorage persistencí.",
+          "Správce výdajů s CRUD operacemi, navigací a localStorage persistencí. Pokryto komponentovými testy (Vitest + React Testing Library).",
       },
       movieSearch: {
         title: "Movie Search App",
         description:
-          "1000+ filmů z TMDb API s debounced vyhledáváním, filtrováním a oblíbenými.",
+          "1000+ filmů z TMDb API s debounced vyhledáváním, filtrováním a oblíbenými. Přepracováno do vlastních hooks (useDebounce, useFavorites, useMovieData, useSearchHistory).",
       },
       weatherApp: {
         title: "Weather App",
@@ -112,17 +112,17 @@ export const translations = {
       bekasava: {
         title: "Court Interpreter Website",
         description:
-          "Reálný klientský projekt. Vícejazyčný web s i18n ve 4 jazycích, custom hooks a plnou přístupností.",
+          "Real client project for a judicial translator. Multilingual site with 4-language i18n, custom hooks and full accessibility.",
       },
       expenseTracker: {
         title: "Expense Tracker",
         description:
-          "Real client project. Multilingual site with 4-language i18n, custom hooks and full accessibility.",
+          "Full CRUD expense tracker with sidebar navigation and localStorage persistence. Covered with a component test suite (Vitest + React Testing Library).",
       },
       movieSearch: {
         title: "Movie Search App",
         description:
-          "1000+ movies from TMDb API with debounced search, filtering and favorites.",
+          "1000+ movies from TMDb API with debounced search, filtering and favorites. Refactored into custom hooks (useDebounce, useFavorites, useMovieData, useSearchHistory).",
       },
       weatherApp: {
         title: "Weather App",

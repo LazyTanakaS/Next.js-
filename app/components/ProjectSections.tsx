@@ -28,7 +28,7 @@ export default function ProjectSection() {
         <ProjectCard
           title={t.projects.expenseTracker.title}
           description={t.projects.expenseTracker.description}
-          tags={["TypeScript", "React", "LocalStorage", "CRUD"]}
+          tags={["TypeScript", "React", "LocalStorage", "CRUD", "Vitest"]}
           demoUrl="https://lazytanakas.github.io/React-TypeScript/expenses-tracker/"
           githubUrl="https://github.com/LazyTanakaS/React-TypeScript/tree/main/expenses-tracker"
           badge="Hlavní projekt"

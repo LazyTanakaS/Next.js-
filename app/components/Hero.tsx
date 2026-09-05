@@ -6,6 +6,7 @@ import { translations } from "../i18n/translations";
 export default function Hero() {
   const { lang } = useLang();
   const t = translations[lang];
+  const cvHref = lang === "cs" ? "/cv-cz.pdf" : "/cv-en.pdf";
 
   return (
     <section className="max-w-4xl mx-auto px-6 pt-32 pb-24">
@@ -29,7 +30,7 @@ export default function Hero() {
         </a>
 
         <a
-          href="/cv.pdf"
+          href={cvHref}
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-lg border border-border px-6 py-2 text-text-strong hover:bg-surface transition-colors"
