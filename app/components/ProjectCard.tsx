@@ -2,7 +2,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   tags: string[];
-  demoUrl: string;
+  demoUrl?: string;
   githubUrl: string;
   badge?: string;
   caseStudyUrl?: string;
@@ -42,14 +42,16 @@ export default function ProjectCard({
       </div>
 
       <div className="flex gap-4 mt-4">
-        <a
-          href={demoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm text-link underline transition-colors hover:text-link-hover"
-        >
-          Live demo →
-        </a>
+        {demoUrl && (
+          <a
+            href={demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-link underline transition-colors hover:text-link-hover"
+          >
+            Live demo →
+          </a>
+        )}
 
         <a
           href={githubUrl}

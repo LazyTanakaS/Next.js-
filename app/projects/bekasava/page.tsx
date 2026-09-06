@@ -30,15 +30,6 @@ export default function BekasavaCaseStudy() {
 
           <div className="flex gap-4">
             <a
-              href="https://bekasava.eu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg bg-text-strong px-6 py-2 text-background text-sm font-medium hover:opacity-90 transition-colors"
-            >
-              Live demo →
-            </a>
-
-            <a
               href="https://github.com/LazyTanakaS/bekasava-eu"
               target="_blank"
               rel="noopener noreferrer"
@@ -56,11 +47,10 @@ export default function BekasavaCaseStudy() {
             Overview
           </h2>
           <p className="text-text-muted leading-relaxed max-w-xl">
-            Multilingual landing site for Mgr. Aksana Bekasava Ph.D., a
-            certified court interpreter based in Prague with 20 years of
-            experience. The site needed to present her services in four
-            languages — Czech, Russian, Bulgarian, and Belarusian — with no UI
-            libraries, clean architecture, and full accessibility.
+            Delivered and deployed to production at bekasava.eu, where it served
+            the client court interpreter business for several months following
+            launch. The client has since taken the site offline; the codebase
+            remains available on GitHub.
           </p>
         </section>
 

@@ -19,7 +19,6 @@ export default function ProjectSection() {
           title={t.projects.bekasava.title}
           description={t.projects.bekasava.description}
           tags={["React", "TypeScript", "Vite", "i18n", "Accessibility"]}
-          demoUrl="https://bekasava.eu"
           githubUrl="https://github.com/LazyTanakaS/bekasava-eu"
           caseStudyUrl="/projects/bekasava"
           badge="Klient"
