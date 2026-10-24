@@ -21,7 +21,8 @@ export default function ProjectSection() {
           tags={["React", "TypeScript", "Vite", "i18n", "Accessibility"]}
           githubUrl="https://github.com/LazyTanakaS/bekasava-eu"
           caseStudyUrl="/projects/bekasava"
-          badge="Klient"
+          badge={t.projects.badges.client}
+          linkLabels={t.projects.links}
         />
 
         <ProjectCard
@@ -30,16 +31,18 @@ export default function ProjectSection() {
           tags={["TypeScript", "React", "LocalStorage", "CRUD", "Vitest"]}
           demoUrl="https://lazytanakas.github.io/React-TypeScript/expenses-tracker/"
           githubUrl="https://github.com/LazyTanakaS/React-TypeScript/tree/main/expenses-tracker"
-          badge="Hlavní projekt"
+          badge={t.projects.badges.featured}
+          linkLabels={t.projects.links}
         />
 
         <ProjectCard
           title={t.projects.movieSearch.title}
           description={t.projects.movieSearch.description}
-          tags={["TMDb API", "React", "useCallback", "Components"]}
+          tags={["TMDb API", "React", "Custom hooks", "Components"]}
           demoUrl="https://lazytanakas.github.io/React-mini-projects/movie-search-app/"
           githubUrl="https://github.com/LazyTanakaS/React-mini-projects"
-          badge="Architektura"
+          badge={t.projects.badges.architecture}
+          linkLabels={t.projects.links}
         />
 
         <ProjectCard
@@ -48,7 +51,8 @@ export default function ProjectSection() {
           tags={["TypeScript", "React", "GitHub Actions", "CI/CD"]}
           demoUrl="https://lazytanakas.github.io/React-TypeScript/weather-app/"
           githubUrl="https://github.com/LazyTanakaS/React-TypeScript/tree/main/weather-app"
-          badge="CI/CD"
+          badge={t.projects.badges.cicd}
+          linkLabels={t.projects.links}
         />
 
         <ProjectCard
@@ -57,7 +61,17 @@ export default function ProjectSection() {
           tags={["Vanilla JS", "Async API", "SPA", "LocalStorage"]}
           demoUrl="https://lazytanakas.github.io/JS-Mini-Projects/quiz-app/"
           githubUrl="https://github.com/LazyTanakaS/JS-Mini-Projects"
-          badge="Základy"
+          badge={t.projects.badges.fundamentals}
+          linkLabels={t.projects.links}
+        />
+
+        <ProjectCard
+          title={t.projects.carServiceLog.title}
+          description={t.projects.carServiceLog.description}
+          tags={["React", "TypeScript", "Vite", "LocalStorage", "CRUD"]}
+          githubUrl="https://github.com/LazyTanakaS/car-service-log"
+          badge={t.projects.badges.personal}
+          linkLabels={t.projects.links}
         />
       </div>
     </section>

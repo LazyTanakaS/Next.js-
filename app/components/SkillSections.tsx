@@ -25,6 +25,10 @@ export default function SkillSection() {
       category: t.skills.categories.integration,
       skills: ["REST API", "LocalStorage"],
     },
+    {
+      category: t.skills.categories.tests,
+      skills: ["Vitest", "React Testing Library"],
+    },
   ];
 
   return (
