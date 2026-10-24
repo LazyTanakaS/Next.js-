@@ -69,6 +69,7 @@ export default function ProjectSection() {
           title={t.projects.carServiceLog.title}
           description={t.projects.carServiceLog.description}
           tags={["React", "TypeScript", "Vite", "LocalStorage", "CRUD"]}
+          demoUrl="https://car-service-log-phi.vercel.app/"
           githubUrl="https://github.com/LazyTanakaS/car-service-log"
           badge={t.projects.badges.personal}
           linkLabels={t.projects.links}
