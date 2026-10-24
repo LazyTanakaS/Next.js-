@@ -132,9 +132,13 @@ export default function BekasavaCaseStudy() {
             Result
           </h2>
           <p className="text-text-muted leading-relaxed max-w-xl">
-            Delivered and deployed to production at bekasava.eu. The site is
-            actively used by the client for professional court interpreter
-            services. Ongoing frontend support and maintenance as needed.
+            A four-language website for people looking for certified
+            translation and court interpreting services in Prague. While it was
+            live, visitors could switch between languages, read the FAQ, and
+            find contact details. The site is now offline, having been taken
+            offline by the client, and the code remains on GitHub. Next time, I
+            would define the language union once and reuse it in both the app
+            and the translation map.
           </p>
         </section>
       </div>
